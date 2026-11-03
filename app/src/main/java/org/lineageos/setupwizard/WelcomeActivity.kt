@@ -62,7 +62,7 @@ class WelcomeActivity : SubBaseActivity() {
             if (SetupWizardUtils.isManagedProfile(this)) {
                 getString(R.string.setup_managed_profile_welcome_message)
             } else {
-                getString(R.string.setup_welcome_message, getString(R.string.os_name))
+                getString(R.string.setup_welcome_message, getString(R.string.driftvane_os_name))
             }
     }
 
