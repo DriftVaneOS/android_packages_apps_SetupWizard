@@ -9,6 +9,7 @@
     <string name="os_name" translatable="false">LineageOS</string>
     <!-- DriftVaneOS: name shown on the welcome and restore screens -->
     <string name="driftvane_os_name" translatable="false">DriftVaneOS</string>
+    <string name="driftvane_services_description" translatable="false">A few extra options to set up your DriftVaneOS device. You can change these later in Settings.</string>
 
     <string name="lineage_wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script</string>
     <string name="lineage_wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script_user</string>
