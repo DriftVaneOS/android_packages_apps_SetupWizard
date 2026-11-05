@@ -49,6 +49,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hyphenationFrequency="none" />
+
+            <!-- DriftVaneOS credit -->
+            <TextView
+                android:id="@+id/welcome_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/driftvane_made_by"
+                android:textColor="@color/dv_primary"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
         </LinearLayout>
 
         <LinearLayout
