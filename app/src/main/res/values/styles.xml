@@ -9,6 +9,18 @@
     <style name="Theme.Setup" parent="@style/SudThemeGlifExpressive.DayNight">
         <item name="sucUsePartnerResource">true</item>
         <item name="sudUsePartnerHeavyTheme">true</item>
+        <!-- DriftVaneOS: blue accents everywhere in setup -->
+        <item name="android:colorAccent">@color/dv_primary</item>
+        <item name="android:colorPrimary">@color/dv_primary</item>
+        <item name="android:colorControlActivated">@color/dv_primary</item>
+        <item name="colorAccent">@color/dv_primary</item>
+        <item name="colorPrimary">@color/dv_primary</item>
+        <item name="colorOnPrimary">@color/dv_on_primary</item>
+        <item name="colorPrimaryContainer">@color/dv_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/dv_on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/dv_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/dv_on_secondary_container</item>
+        <item name="colorControlActivated">@color/dv_primary</item>
     </style>
 
     <!-- TV -->

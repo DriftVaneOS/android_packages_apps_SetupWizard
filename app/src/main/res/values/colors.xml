@@ -5,22 +5,27 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <color name="lineage_accent">#167C80</color>
+    <color name="lineage_accent">#3D7BFF</color>
 
     <color name="button_bar_text_enabled">#ff1e1e1e</color>
     <color name="button_bar_text_disabled">#321e1e1e</color>
 
 
-    <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_light
-    </color>
-    <color name="setup_compat_footer_primary_button_text_color">
-        @*android:color/system_on_primary_light
-    </color>
+    <!-- DriftVaneOS: setup is blue, whatever the system palette is at first boot -->
+    <color name="dv_primary">#2F6BFF</color>
+    <color name="dv_on_primary">#FFFFFF</color>
+    <color name="dv_primary_container">#DCE4FF</color>
+    <color name="dv_on_primary_container">#00184A</color>
+    <color name="dv_secondary_container">#DDE3F8</color>
+    <color name="dv_on_secondary_container">#141B2C</color>
 
-    <color name="materialColorPrimary">@*android:color/system_primary_light</color>
-    <color name="materialColorOnPrimary">@*android:color/system_on_primary_light</color>
+    <color name="setup_compat_footer_primary_button_bg_color">@color/dv_primary</color>
+    <color name="setup_compat_footer_primary_button_text_color">@color/dv_on_primary</color>
 
-    <color name="finish_swipe_arrow">#82D5C7</color>
+    <color name="materialColorPrimary">@color/dv_primary</color>
+    <color name="materialColorOnPrimary">@color/dv_on_primary</color>
+
+    <color name="finish_swipe_arrow">#7FA6FF</color>
 
     <!-- TV -->
     <color name="tv_background">#000000</color>

@@ -5,9 +5,17 @@
 -->
 <resources>
 
-    <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_dark</color>
-    <color name="setup_compat_footer_primary_button_text_color">@*android:color/system_on_primary_dark</color>
+    <!-- DriftVaneOS: blue in dark mode too -->
+    <color name="dv_primary">#AFC6FF</color>
+    <color name="dv_on_primary">#002C6E</color>
+    <color name="dv_primary_container">#1F4FC4</color>
+    <color name="dv_on_primary_container">#DCE4FF</color>
+    <color name="dv_secondary_container">#3B4458</color>
+    <color name="dv_on_secondary_container">#DDE3F8</color>
 
-    <color name="materialColorPrimary">@*android:color/system_primary_dark</color>
-    <color name="materialColorOnPrimary">@*android:color/system_on_primary_dark</color>
+    <color name="setup_compat_footer_primary_button_bg_color">@color/dv_primary</color>
+    <color name="setup_compat_footer_primary_button_text_color">@color/dv_on_primary</color>
+
+    <color name="materialColorPrimary">@color/dv_primary</color>
+    <color name="materialColorOnPrimary">@color/dv_on_primary</color>
 </resources>
