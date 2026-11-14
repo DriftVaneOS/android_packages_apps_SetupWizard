@@ -29,7 +29,8 @@ class LineageSettingsActivity : BaseSetupWizardActivity() {
         super.onCreate(savedInstanceState)
 
         val osName = getString(R.string.os_name)
-        setDescriptionText(buildDescription(osName))
+        // DriftVaneOS: no LineageOS stats or privacy policy text on this page
+        setDescriptionText(getString(R.string.driftvane_services_description))
 
         val metricsHelpImproveLineage = getString(R.string.services_help_improve_cm, osName)
         metricsItem.summary =
@@ -72,9 +73,10 @@ class LineageSettingsActivity : BaseSetupWizardActivity() {
 
     private fun updateMetricsOption() {
         val myPageBundle = SetupWizardApp.settingsBundle
-        val metricsChecked =
-            !myPageBundle.containsKey(KEY_SEND_METRICS) || myPageBundle.getBoolean(KEY_SEND_METRICS)
-        metricsItem.isChecked = metricsChecked
+        // DriftVaneOS: LineageOS usage stats are off and hidden
+        val metricsChecked = false
+        metricsItem.isChecked = false
+        metricsItem.isVisible = false
         myPageBundle.putBoolean(KEY_SEND_METRICS, metricsChecked)
     }
 

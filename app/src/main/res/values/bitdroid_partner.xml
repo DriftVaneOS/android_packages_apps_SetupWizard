@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 bitDroid
+     SPDX-License-Identifier: Apache-2.0
+
+     Partner customization read by every setup page (Google setup, Wi-Fi, accounts...).
+     The page layouts go transparent so the Glow gradient behind them (painted by the
+     framework during setup) shows through; text goes white, buttons go pill.
+-->
+<resources>
+    <color name="setup_design_layout_bg_color">#00000000</color>
+    <color name="setup_design_header_area_background_color">#00000000</color>
+    <color name="setup_compat_footer_bar_bg_color">#00000000</color>
+    <color name="setup_compat_navigation_bar_bg_color">#00000000</color>
+    <color name="setup_compat_navigation_bar_divider_color">#00000000</color>
+    <drawable name="setup_compat_status_bar_background">#00000000</drawable>
+    <bool name="setup_compat_light_status_bar">false</bool>
+    <bool name="setup_compat_light_navigation_bar">false</bool>
+
+    <color name="setup_design_header_text_color">@android:color/system_accent1_100</color>
+    <dimen name="setup_design_header_text_size">34sp</dimen>
+    <color name="setup_design_description_text_color">@android:color/system_neutral2_200</color>
+    <color name="setup_design_description_link_text_color">#FFEADDFF</color>
+    <color name="setup_design_content_text_color">#FFE6E0E9</color>
+    <color name="setup_design_content_link_text_color">#FFEADDFF</color>
+    <color name="setup_design_icon_color">@android:color/system_accent1_200</color>
+    <color name="setup_design_items_background_color">#29D0BCFF</color>
+
+    <color name="setup_compat_footer_secondary_button_bg_color">@android:color/system_accent1_800</color>
+    <color name="setup_compat_footer_secondary_button_text_color">@android:color/system_accent1_100</color>
+    <color name="setup_compat_footer_button_disabled_bg_color">#33FFFFFF</color>
+    <color name="setup_compat_primary_button_disabled_text_color">#80FFFFFF</color>
+    <color name="setup_compat_secondary_button_disabled_text_color">#80FFFFFF</color>
+
+    <!-- Bloom: lilac Next pill with deep ink text, full pill corners -->
+    <color name="setup_compat_footer_primary_button_bg_color">@android:color/system_accent1_200</color>
+    <color name="setup_compat_footer_primary_button_text_color">@android:color/system_accent1_900</color>
+    <dimen name="setup_compat_footer_button_radius">28dp</dimen>
+</resources>

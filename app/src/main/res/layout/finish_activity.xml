@@ -34,6 +34,27 @@
             android:scaleType="fitCenter"
             android:src="@drawable/logo" />
 
+        <!-- DriftVaneOS: headline + credit -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/driftvane_all_set"
+            android:textColor="@color/dv_logo"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="28dp"
+            android:text="@string/driftvane_made_by"
+            android:textColor="@color/dv_muted"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium" />
+
         <LinearLayout
             android:id="@+id/swipe_hint"
             android:layout_width="match_parent"

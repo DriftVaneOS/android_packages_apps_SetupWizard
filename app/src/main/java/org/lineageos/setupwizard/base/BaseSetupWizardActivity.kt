@@ -54,6 +54,8 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
         if (installFooterBar && template.hasFooterBar) {
             setupFooterBar()
         }
+        // bitDroid: glow gradient, big white headings and pill buttons on every page
+        org.lineageos.setupwizard.util.BitLook.apply(this)
         onBackPressedDispatcher.addCallback(
             this,
             object : OnBackPressedCallback(true) {

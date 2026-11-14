@@ -9,6 +9,37 @@
     <style name="Theme.Setup" parent="@style/SudThemeGlifExpressive.DayNight">
         <item name="sucUsePartnerResource">true</item>
         <item name="sudUsePartnerHeavyTheme">true</item>
+        <!-- DriftVaneOS: blue accents everywhere in setup -->
+        <item name="android:colorAccent">@color/dv_primary</item>
+        <item name="android:colorPrimary">@color/dv_primary</item>
+        <item name="android:colorControlActivated">@color/dv_primary</item>
+        <item name="colorAccent">@color/dv_primary</item>
+        <item name="colorPrimary">@color/dv_primary</item>
+        <item name="colorOnPrimary">@color/dv_on_primary</item>
+        <item name="colorPrimaryContainer">@color/dv_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/dv_on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/dv_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/dv_on_secondary_container</item>
+        <item name="colorControlActivated">@color/dv_primary</item>
+        <item name="android:windowBackground">@color/dv_ink</item>
+        <item name="android:colorBackground">@color/dv_ink</item>
+        <item name="colorSurface">@color/dv_ink</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- DriftVaneOS: the big outlined pill (same look as the DriftHome search bar) -->
+    <style name="DvPillButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/dv_logo</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="strokeColor">@color/dv_logo</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="iconTint">@color/dv_logo</item>
     </style>
 
     <!-- TV -->

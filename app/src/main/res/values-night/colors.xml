@@ -4,10 +4,20 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- DriftVaneOS: ink background, white buttons, lilac containers -->
+    <color name="dv_ink">#FF0B0A10</color>
+    <color name="dv_logo">#FFFFFFFF</color>
+    <color name="dv_primary">#FFFFFFFF</color>
+    <color name="dv_on_primary">#FF0B0A10</color>
+    <color name="dv_primary_container">#FF2E2546</color>
+    <color name="dv_on_primary_container">#FFEADDFF</color>
+    <color name="dv_secondary_container">#FF1E1B26</color>
+    <color name="dv_on_secondary_container">#FFE6E0E9</color>
+    <color name="dv_muted">#FFB4ADC2</color>
 
-    <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_dark</color>
-    <color name="setup_compat_footer_primary_button_text_color">@*android:color/system_on_primary_dark</color>
+    <color name="setup_compat_footer_primary_button_bg_color">@color/dv_primary</color>
+    <color name="setup_compat_footer_primary_button_text_color">@color/dv_on_primary</color>
 
-    <color name="materialColorPrimary">@*android:color/system_primary_dark</color>
-    <color name="materialColorOnPrimary">@*android:color/system_on_primary_dark</color>
+    <color name="materialColorPrimary">@color/dv_primary</color>
+    <color name="materialColorOnPrimary">@color/dv_on_primary</color>
 </resources>

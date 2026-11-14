@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: DriftVaneOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- Soft violet, teal and plum glows on ink (same as the DriftHome setup) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dv_ink" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.2"
+                android:centerY="0.12"
+                android:gradientRadius="420dp"
+                android:startColor="#8C5B3FC8"
+                android:endColor="#000B0A10" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.85"
+                android:centerY="0.9"
+                android:gradientRadius="380dp"
+                android:startColor="#990F5C63"
+                android:endColor="#000B0A10" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.8"
+                android:centerY="0.42"
+                android:gradientRadius="300dp"
+                android:startColor="#735A2346"
+                android:endColor="#000B0A10" />
+        </shape>
+    </item>
+</layer-list>

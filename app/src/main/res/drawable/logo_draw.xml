@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: bitDroid
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!-- bitDroid: the switch outline draws in, the bit drops in at 0, then flips to 1 -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="160dp"
+            android:height="80dp"
+            android:viewportWidth="160"
+            android:viewportHeight="80">
+            <path
+                android:name="outline"
+                android:pathData="M40,8 L120,8 A32,32 0 0 1 120,72 L40,72 A32,32 0 0 1 40,8 Z"
+                android:strokeColor="@color/dv_logo"
+                android:strokeWidth="12"
+                android:strokeLineJoin="round"
+                android:trimPathEnd="0" />
+            <group
+                android:name="bit"
+                android:pivotX="112"
+                android:pivotY="40"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:translateX="-64">
+                <path
+                    android:pathData="M112,20 A20,20 0 1 1 112,60 A20,20 0 1 1 112,20 Z"
+                    android:fillColor="@color/dv_logo" />
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="outline">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="700"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="trimPathEnd"
+                android:startOffset="100"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="bit">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:duration="260" android:startOffset="650"
+                    android:interpolator="@android:anim/overshoot_interpolator"
+                    android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+                <objectAnimator android:duration="260" android:startOffset="650"
+                    android:interpolator="@android:anim/overshoot_interpolator"
+                    android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" />
+                <objectAnimator android:duration="480" android:startOffset="1150"
+                    android:interpolator="@android:anim/overshoot_interpolator"
+                    android:propertyName="translateX" android:valueFrom="-64" android:valueTo="0" android:valueType="floatType" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
